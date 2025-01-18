@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.a-element {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.a-element:hover {
+    color: #27ae60;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 50px;
+}
+
+.home-left, .home-right {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.pfp {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #27ae60;
+    box-shadow: 0 0 20px rgba(39, 174, 96, 0.7);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #219150;
+}
+
+/* Education Section */
+.education-section{
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.education-item {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 250px;
+}
+
+/* Social Icons */
+.social-icons img {
+    width: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .pfp {
+        width: 250px;
+        height: 250px;
+    }
+
+    .education-item {
+        width: 90%;
+    }
+}
+.projectss{
+    transition: transform 0.3s ease-in-out;
+    margin:20px;
+    padding: 50px;
+    text-align: center;
+    
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-color: aquamarine;
+    background-color: #111;
+    border-radius: 10px;
+}
+.projects{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
